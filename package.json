@@ -12,7 +12,8 @@
     "build-html": "npm run build-html-index & npm run build-html-about",
     "watch-ejs": "nodemon -e ejs -x \"npm run build-html\"",
     "watch-css": "nodemon -e scss -x \"npm run build-css\"",
-    "watch-files": "copy-and-watch src/**/js/* src/**/images/* public/ --watch"
+    "watch-files": "copy-and-watch src/**/js/* src/**/images/* public/ --watch",
+    "zip": "npm-build-zip --source=. --destination=."
   },
   "author": "wptom",
   "license": "ISC",
@@ -24,6 +25,7 @@
     "copy-and-watch": "^0.1.6",
     "ejs": "^3.1.6",
     "node-sass": "^7.0.1",
-    "nodemon": "^2.0.15"
+    "nodemon": "^2.0.15",
+    "npm-build-zip": "^1.0.3"
   }
 }
