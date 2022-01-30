@@ -5,6 +5,7 @@
   "main": "index.js",
   "scripts": {
     "start": "npm run watch-css & npm run watch-files & npm run watch-ejs & nodemon index.js",
+    "watch": "nodemon --ext *",
     "build-css": "node-sass --output-style compressed --source-map true --source-map-contents true --precision 6 --include-path scss src/scss/main.scss public/css/main.css",
     "build-html-index": "ejs views/index.ejs -o public/index.html",
     "build-html-about": "ejs views/about.ejs -o public/about.html",
