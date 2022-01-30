@@ -1,0 +1,28 @@
+{
+  "name": "html-starter",
+  "version": "1.0.0",
+  "description": "HTML template starter stack.",
+  "main": "index.js",
+  "scripts": {
+    "start": "npm run watch-css & npm run watch-files & npm run watch-ejs & nodemon index.js",
+    "build-css": "node-sass --output-style compressed --source-map true --source-map-contents true --precision 6 --include-path scss src/scss/main.scss public/css/main.css",
+    "build-html-index": "ejs views/index.ejs -o public/index.html",
+    "build-html-about": "ejs views/about.ejs -o public/about.html",
+    "build-html": "npm run build-html-index & npm run build-html-about",
+    "watch-ejs": "nodemon -e ejs -x \"npm run build-html\"",
+    "watch-css": "nodemon -e scss -x \"npm run build-css\"",
+    "watch-files": "copy-and-watch src/**/js/* src/**/images/* public/ --watch"
+  },
+  "author": "wptom",
+  "license": "ISC",
+  "dependencies": {
+    "express": "^4.17.2"
+  },
+  "devDependencies": {
+    "bootstrap": "^5.1.3",
+    "copy-and-watch": "^0.1.6",
+    "ejs": "^3.1.6",
+    "node-sass": "^7.0.1",
+    "nodemon": "^2.0.15"
+  }
+}
