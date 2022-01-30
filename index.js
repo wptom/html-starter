@@ -1,4 +1,4 @@
-const express = require('express');
+/*const express = require('express');
 const path = require('path');
 const ejs = require('ejs');
 
@@ -18,4 +18,5 @@ app.get('/',(req,res) => {
 
 app.get('/about',(req,res) => {
     res.sendFile(path.resolve(__dirname,'public/about.html'));
-});
+});*/
+console.log('index.js');
