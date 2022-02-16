@@ -4,7 +4,6 @@
         "stylelint-order"
     ],
     "rules": {
-        "color-function-notation": "modern",
         "order/order": [
             "custom-properties",
             "declarations"
