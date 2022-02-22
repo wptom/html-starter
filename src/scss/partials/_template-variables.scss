@@ -22,20 +22,37 @@ $grid-columns: 12 !default;
 $grid-gutter-width: 1.5rem !default;
 $grid-row-columns: 6 !default;
 
+// Colors
+$col-white: #fff;
+$col-black: #000;
+$col-brand-primary: #238fcd;
+$col-brand-accent: #18618b;
+$col-neutral-1: #cbe6f6;
+$col-neutral-2: #f3f8fe;
+
 // Body element settings
-$body-bg: skyblue !default;
-$body-color: black !default;
+$col-body-bg: $col-neutral-2;
+$col-body-text: $col-brand-primary;
 
 // Font
 $font-family-base: "Montserrat", sans-serif;
-$font-size-base: 1rem !default; // Assumes the browser default, typically `16px`
-$h1-font-size: $font-size-base * 2.5 !default;
-$h2-font-size: $font-size-base * 2 !default;
-$h3-font-size: $font-size-base * 1.75 !default;
-$h4-font-size: $font-size-base * 1.5 !default;
-$h5-font-size: $font-size-base * 1.25 !default;
-$h6-font-size: $font-size-base !default;
+$font-size-default: 16px;
+$font-size-huge: 5rem;
+$font-size-big: 4.25rem;
+$font-size-h1: 3.125rem;
+$font-size-h2: 2.375rem;
+$font-size-h3: 1.75rem;
+$font-size-h4: 1.375rem;
+$font-size-h5: 1.15rem;
+$font-size-h6: 1rem;
+$font-size-body-small: 1rem;
+$font-size-body-medium: 1.25rem;
+$font-size-body-big: 1.5rem;
 
 // Header
-$header-height-mobile: 65px !default;
-$header-height-desktop: 80px !default;
+$header-height-mobile: 65px;
+$header-height-desktop: 80px;
+
+// Header nav - header-nav.scss
+$col-header-nav-border-bottom: $col-brand-primary;
+$col-header-nav-burger: $col-brand-primary;

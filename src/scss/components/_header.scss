@@ -1,0 +1,7 @@
+.header {
+  &__inner {
+    width: 100vw;
+    height: $header-height-mobile;
+    border-bottom: 1px solid $col-header-nav-border-bottom;
+  }
+}

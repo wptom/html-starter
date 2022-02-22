@@ -1,6 +1,8 @@
 body {
-  background-color: $body-bg;
-  color: $body-color;
-  font-size: $font-size-base;
+  margin: 0;
+  padding: 0;
+  background-color: $col-body-bg;
+  color: $col-body-text;
+  font-size: $font-size-body-small;
   font-family: $font-family-base;
 }
