@@ -22,17 +22,38 @@ $grid-columns: 12 !default;
 $grid-gutter-width: 1.5rem !default;
 $grid-row-columns: 6 !default;
 
-// Colors
+// Colors - basic
 $col-white: #fff;
+$col-gray-100: #f8f9fa;
+$col-gray-200: #e9ecef;
+$col-gray-300: #dee2e6;
+$col-gray-400: #ced4da;
+$col-gray-500: #adb5bd;
+$col-gray-600: #6c757d;
+$col-gray-700: #495057;
+$col-gray-800: #343a40;
+$col-gray-900: #212529;
 $col-black: #000;
+$col-blue: #0d6efd;
+$col-indigo: #6610f2;
+$col-purple: #6f42c1;
+$col-pink: #d63384;
+$col-red: #dc3545;
+$col-orange: #fd7e14;
+$col-yellow: #ffc107;
+$col-green: #198754;
+$col-teal: #20c997;
+$col-cyan: #0dcaf0;
+
+// Colors - theme
 $col-brand-primary: #238fcd;
 $col-brand-accent: #18618b;
 $col-neutral-1: #cbe6f6;
 $col-neutral-2: #f3f8fe;
 
 // Body element settings
-$col-body-bg: $col-neutral-2;
-$col-body-text: $col-brand-primary;
+$body-background-color: $col-neutral-2;
+$body-text-color: $col-brand-primary;
 
 // Font
 $font-family-base: "Montserrat", sans-serif;
@@ -54,5 +75,7 @@ $header-height-mobile: 65px;
 $header-height-desktop: 80px;
 
 // Header nav - header-nav.scss
-$col-header-nav-border-bottom: $col-brand-primary;
-$col-header-nav-burger: $col-brand-primary;
+$header-nav-border-bottom: 1px solid rgb(0 0 0 / 10%);
+$header-nav-background-color: $col-gray-800;
+$header-nav-border-bottom-color: $col-brand-primary;
+$header-nav-burger-color: $col-brand-primary;
