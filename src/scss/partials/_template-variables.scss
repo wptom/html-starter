@@ -22,6 +22,9 @@ $grid-columns: 12 !default;
 $grid-gutter-width: 1.5rem !default;
 $grid-row-columns: 6 !default;
 
+// General
+$transition-hover: all 0.3s ease-in-out;
+
 // Colors - basic
 $col-white: #fff;
 $col-gray-100: #f8f9fa;
@@ -58,7 +61,8 @@ $body-text-color: $col-brand-primary;
 // Font
 $font-family-base: "Montserrat", sans-serif;
 $font-size-default: 16px;
-$font-size-huge: 5rem;
+$font-size-huge-desktop: 5rem;
+$font-size-huge-mobile: 2.25rem;
 $font-size-big: 4.25rem;
 $font-size-h1: 3.125rem;
 $font-size-h2: 2.375rem;
