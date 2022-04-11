@@ -1,0 +1,42 @@
+.brands {
+  border-top: 1px solid $brands-border-color;
+  border-bottom: 1px solid $brands-border-color;
+  background-color: $brands-background-color;
+
+  @include media-breakpoint-up(sm) {
+    padding: 10px 0;
+  }
+
+  &__inner {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: center;
+    padding: 10px 0;
+  }
+
+  &__item {
+    display: flex;
+    flex-basis: 50%;
+    align-items: center;
+    justify-content: center;
+    padding: 10px;
+
+    @include media-breakpoint-up(sm) {
+      flex-basis: 20%;
+    }
+
+    & > img {
+      display: block;
+      max-height: 25px;
+      opacity: 0.2;
+
+      &:hover {
+        opacity: 1;
+      }
+
+      @include media-breakpoint-up(sm) {
+        max-height: 30px;
+      }
+    }
+  }
+}

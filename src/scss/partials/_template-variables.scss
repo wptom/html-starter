@@ -1,3 +1,4 @@
+@use "sass:color";
 @import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap");
 
 // Grid
@@ -83,3 +84,7 @@ $header-nav-border-bottom: 1px solid rgb(0 0 0 / 10%);
 $header-nav-background-color: $col-gray-800;
 $header-nav-border-bottom-color: $col-brand-primary;
 $header-nav-burger-color: $col-brand-primary;
+
+// Brands
+$brands-background-color: color.adjust($col-brand-primary, $lightness: 20%);
+$brands-border-color: color.adjust($col-brand-primary, $lightness: 10%);
