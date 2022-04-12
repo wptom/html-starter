@@ -4,6 +4,9 @@
         "stylelint-order"
     ],
     "rules": {
+        "indentation": 4,
+        "comment-empty-line-before": "never",
+        "scss/double-slash-comment-empty-line-before": false,
         "order/order": [
             "custom-properties",
             "declarations"

@@ -1,0 +1,25 @@
+.icon-box {
+    &__inner {}
+
+    &__icon {
+        text-align: center;
+
+        i {
+            font-size: 60px;
+        }
+    }
+
+    &__text {
+        text-align: center;
+
+        &__title {
+            margin-bottom: 20px;
+            font-weight: 700;
+            font-size: $font-size-h4;
+        }
+
+        &__desc {
+            line-height: $line-height-default;
+        }
+    }
+}

@@ -1,27 +1,27 @@
 .button {
-  padding: 0 40px;
-  border: 1px solid $col-brand-primary;
-  border-radius: 3px;
-  background-color: $col-brand-primary;
-  color: white;
-  font-weight: bold;
-  font-size: 0.9em;
-  line-height: 3em;
-  letter-spacing: 0.1em;
-  text-align: center;
-  text-transform: uppercase;
-
-  &:hover {
-    background-color: darken($col-brand-primary, 10%);
-    cursor: pointer;
-  }
-
-  &--inverted {
-    background-color: transparent;
-    color: $col-brand-primary;
+    padding: 0 40px;
+    border: 1px solid $col-brand-primary;
+    border-radius: 3px;
+    background-color: $col-brand-primary;
+    color: white;
+    font-weight: bold;
+    font-size: 0.9em;
+    line-height: 3em;
+    letter-spacing: 0.1em;
+    text-align: center;
+    text-transform: uppercase;
 
     &:hover {
-      color: $col-white;
+        background-color: darken($col-brand-primary, 10%);
+        cursor: pointer;
     }
-  }
+
+    &--inverted {
+        background-color: transparent;
+        color: $col-brand-primary;
+
+        &:hover {
+            color: $col-white;
+        }
+    }
 }

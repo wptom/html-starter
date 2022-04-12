@@ -10,9 +10,17 @@
 // Bootstrap imports
 @import "partials/template-bootstrap";
 
+// Font Awesome
+@import "../../node_modules/@fortawesome/fontawesome-free/scss/fontawesome";
+@import "../../node_modules/@fortawesome/fontawesome-free/scss/brands";
+@import "../../node_modules/@fortawesome/fontawesome-free/scss/regular";
+// @import "../../node_modules/@fortawesome/fontawesome-free/scss/solid";
+
 // Components
 @import "components/buttons";
-@import "components/header";
 @import "components/header-nav";
-@import "components/hero";
 @import "components/brands";
+@import "components/icon-box";
+@import "components/header";
+@import "components/section-hero";
+@import "components/section-features";

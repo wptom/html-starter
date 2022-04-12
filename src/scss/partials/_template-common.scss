@@ -1,12 +1,12 @@
 :hover {
-  transition: $transition-hover;
+    transition: $transition-hover;
 }
 
 body {
-  margin: 0;
-  padding: 0;
-  background-color: $body-background-color;
-  color: $body-text-color;
-  font-size: $font-size-body-small;
-  font-family: $font-family-base;
+    margin: 0;
+    padding: 0;
+    background-color: $body-background-color;
+    color: $body-text-color;
+    font-size: $font-size-body-small;
+    font-family: $font-family-base;
 }

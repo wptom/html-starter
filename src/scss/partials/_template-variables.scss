@@ -3,19 +3,19 @@
 
 // Grid
 $grid-breakpoints: (
-  xs: 0,
-  sm: 576px,
-  md: 768px,
-  lg: 992px,
-  xl: 1200px,
-  xxl: 1390px
+    xs: 0,
+    sm: 576px,
+    md: 768px,
+    lg: 992px,
+    xl: 1200px,
+    xxl: 1390px
 ) !default;
 $container-max-widths: (
-  sm: 540px,
-  md: 720px,
-  lg: 960px,
-  xl: 1140px,
-  xxl: 1320px
+    sm: 540px,
+    md: 720px,
+    lg: 960px,
+    xl: 1140px,
+    xxl: 1320px
 ) !default;
 $enable-grid-classes: true !default;
 $enable-cssgrid: false !default;
@@ -60,6 +60,7 @@ $body-background-color: $col-neutral-2;
 $body-text-color: $col-brand-primary;
 
 // Font
+$line-height-default: 1.5;
 $font-family-base: "Montserrat", sans-serif;
 $font-size-default: 16px;
 $font-size-huge-desktop: 5rem;

@@ -1,0 +1,73 @@
+.hero {
+    &__inner {
+        overflow: hidden;
+        padding: 30px 0;
+    }
+
+    &__info {
+        width: 290px;
+        text-align: center;
+
+        @include media-breakpoint-up(md) {
+            width: 550px;
+        }
+
+        @include media-breakpoint-up(lg) {
+            width: 100%;
+            text-align: left;
+        }
+
+        &__title {
+            margin-bottom: 20px;
+            font-weight: bold;
+            font-size: $font-size-huge-mobile;
+            line-height: 1.2;
+
+            @include media-breakpoint-up(lg) {
+                font-size: $font-size-huge-desktop;
+            }
+
+            span {
+                display: block;
+
+                @include media-breakpoint-up(md) {
+                    font-size: 1.75rem;
+                }
+            }
+        }
+
+        &__desc {
+            margin-bottom: 40px;
+            line-height: $line-height-default;
+        }
+
+        &__actions {
+            margin-bottom: 50px;
+
+            .button {
+                width: 100%;
+                margin-right: 30px;
+                margin-bottom: 20px;
+
+                @include media-breakpoint-up(md) {
+                    width: auto;
+                }
+
+                &:last-child {
+                    margin-right: 0;
+                    margin-bottom: 0;
+                }
+            }
+        }
+    }
+
+    &__image {
+        img {
+            max-width: 100%;
+
+            @include media-breakpoint-up(lg) {
+                max-width: none;
+            }
+        }
+    }
+}
