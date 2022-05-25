@@ -1,0 +1,44 @@
+.accordion {
+    &__title {
+        width: 100%;
+        padding: 20px;
+        border: none;
+        border-top: 1px solid $accordion-border-color;
+        background-color: transparent;
+        color: $accordion-default-color;
+        outline: none;
+        font-weight: bold;
+        font-size: $accordion-font-size;
+        text-align: left;
+        cursor: pointer;
+        transition: 0.4s;
+
+        &::after {
+            content: "\002B";
+            float: right;
+            margin-left: 5px;
+            color: $accordion-default-color;
+            font-weight: bold;
+        }
+
+        &--active::after {
+            content: "\2212";
+        }
+    }
+
+    &__panel {
+        overflow: hidden;
+        max-height: 0;
+        padding: 0 20px;
+        transition: max-height 0.2s ease-out;
+
+        p {
+            padding-bottom: 20px;
+            line-height: $line-height-default;
+        }
+
+        &:last-child {
+            border-bottom: 1px solid $accordion-border-color;
+        }
+    }
+}

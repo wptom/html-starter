@@ -1,0 +1,44 @@
+:hover {
+	transition: $transition-hover;
+}
+
+body {
+	margin: 0;
+	padding: 0;
+	background-color: $body-background-color;
+	color: $body-text-color;
+	font-size: $font-size-body-small;
+	font-family: $font-family-base;
+	line-height: $line-height-default;
+}
+
+.section {
+	&--with-padding {
+		padding-top: 50px;
+		padding-bottom: 50px;
+	}
+}
+
+.section-title {
+	margin-bottom: 50px;
+	font-weight: bold;
+	font-size: $font-size-h2;
+	line-height: 1.2;
+	text-align: center;
+
+	@include media-breakpoint-up(sm) {
+		font-weight: bold;
+		font-size: $font-size-h1;
+	}
+
+	&__sub {
+		display: block;
+		margin-bottom: 20px;
+		font-size: $font-size-h3;
+		line-height: 1.2;
+
+		@include media-breakpoint-up(sm) {
+			font-size: $font-size-h4;
+		}
+	}
+}

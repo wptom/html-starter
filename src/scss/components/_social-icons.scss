@@ -1,0 +1,25 @@
+.social-icons {
+	&__list {
+		&__item {
+			display: inline-block;
+			margin-right: 10px;
+			font-size: $col-social-font-size;
+
+			&__link,
+			&__link:link,
+			&__link:visited {
+				color: $col-social-icons-default;
+			}
+
+			&__link:hover,
+			&__link:active,
+			&__link:focus{
+				color: $col-social-icons-hover;
+			}
+
+			&:last-child {
+				margin-right: 0;
+			}
+		}
+	}
+}

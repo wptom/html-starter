@@ -4,9 +4,6 @@
 // Variables
 @import "partials/template-variables";
 
-// Body
-@import "partials/template-common";
-
 // Bootstrap imports
 @import "partials/template-bootstrap";
 
@@ -14,13 +11,24 @@
 @import "../../node_modules/@fortawesome/fontawesome-free/scss/fontawesome";
 @import "../../node_modules/@fortawesome/fontawesome-free/scss/brands";
 @import "../../node_modules/@fortawesome/fontawesome-free/scss/regular";
-// @import "../../node_modules/@fortawesome/fontawesome-free/scss/solid";
+@import "../../node_modules/@fortawesome/fontawesome-free/scss/solid";
+
+// Typography
+@import "partials/typography";
 
 // Components
 @import "components/buttons";
+@import "components/social-icons";
 @import "components/header-nav";
+@import "components/footer-nav";
 @import "components/brands";
 @import "components/icon-box";
 @import "components/header";
+@import "components/footer";
+@import "components/accordion";
+@import "components/download-buttons";
+@import "components/testimonials-slider";
 @import "components/section-hero";
 @import "components/section-features";
+@import "components/section-faq";
+@import "components/section-download";

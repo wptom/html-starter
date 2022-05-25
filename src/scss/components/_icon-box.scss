@@ -1,17 +1,51 @@
 .icon-box {
-    &__inner {}
+    margin-bottom: 30px;
 
-    &__icon {
+    @include media-breakpoint-up(md) {
+        margin-bottom: 30px;
+    }
+
+    &__inner {
+        display: flex;
+        flex-flow: column nowrap;
+        justify-content: center;
         text-align: center;
 
+        @include media-breakpoint-up(md) {
+            flex-direction: row;
+            text-align: left;
+        }
+    }
+
+    &__icon {
+        display: flex;
+        align-items: center;
+        align-self: center;
+        justify-content: center;
+
+        @include media-breakpoint-up(md) {
+            flex-basis: 130px;
+            align-self: flex-start;
+            margin-right: 30px;
+        }
+
         i {
-            font-size: 60px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            width: 70px;
+            height: 70px;
+            margin-right: 0;
+            margin-bottom: 30px;
+            border-radius: 50%;
+            background-color: $icon-box-background-color;
+            text-align: center;
+            color: $icon-box-default-color;
+            font-size: 30px;
         }
     }
 
     &__text {
-        text-align: center;
-
         &__title {
             margin-bottom: 20px;
             font-weight: 700;

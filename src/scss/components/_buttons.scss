@@ -1,8 +1,8 @@
 .button {
     padding: 0 40px;
-    border: 1px solid $col-brand-primary;
+    border: 1px solid $col-button-border-default;
     border-radius: 3px;
-    background-color: $col-brand-primary;
+    background-color: $col-button-default;
     color: white;
     font-weight: bold;
     font-size: 0.9em;
@@ -12,7 +12,7 @@
     text-transform: uppercase;
 
     &:hover {
-        background-color: darken($col-brand-primary, 10%);
+        background-color: $col-button-hover;
         cursor: pointer;
     }
 

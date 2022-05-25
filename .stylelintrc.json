@@ -4,8 +4,9 @@
         "stylelint-order"
     ],
     "rules": {
-        "indentation": 4,
+        "indentation": "tab",
         "comment-empty-line-before": "never",
+        "block-no-empty": [],
         "scss/double-slash-comment-empty-line-before": false,
         "order/order": [
             "custom-properties",
