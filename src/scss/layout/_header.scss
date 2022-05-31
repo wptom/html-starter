@@ -1,0 +1,22 @@
+.header {
+	&__inner {
+		display: flex;
+		align-items: center;
+		width: 100vw;
+		height: $header-height-mobile;
+		border-bottom: 1px solid $header-nav-border-bottom-color;
+	}
+
+	&__logo {
+		width: 32px;
+		height: 32px;
+		background: url("../images/logo-mobile.svg") no-repeat;
+		text-indent: -9999px;
+
+		@include media-breakpoint-up(lg) {
+			width: 149px;
+			height: 39px;
+			background: url("../images/logo.svg") no-repeat;
+		}
+	}
+}

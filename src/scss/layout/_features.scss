@@ -1,0 +1,48 @@
+.features {
+	&__images {
+		position: relative;
+		order: 2;
+		height: auto;
+
+		@include media-breakpoint-up(lg) {
+			order: 1;
+			height: 800px;
+		}
+
+		&__img {
+			position: relative;
+			display: block;
+			max-width: 100%;
+			height: auto;
+			background-color: lightpink;
+
+			@include media-breakpoint-up(lg) {
+				position: absolute;
+				right: 0;
+				width: 720px;
+				max-width: none;
+				height: 800px;
+			}
+		}
+	}
+
+	&__boxes {
+		display: flex;
+		flex-flow: column nowrap;
+		justify-content: center;
+		order: 1;
+		margin-bottom: 50px;
+
+		@include media-breakpoint-up(lg) {
+			order: 2;
+			height: 800px;
+			margin-bottom: 0;
+		}
+	}
+
+	.section-title {
+		@include media-breakpoint-up(lg) {
+			text-align: left;
+		}
+	}
+}

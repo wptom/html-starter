@@ -12,7 +12,7 @@
     "build-html": "npm run build-html-index & npm run build-html-about & npm run reload",
     "watch-ejs": "nodemon -e ejs -x \"npm run build-html\"",
     "watch-css": "nodemon -e scss -x \"npm run build-css\"",
-    "watch-files": "copy-and-watch src/**/js/* src/**/images/* src/**/webfonts/* public/ --watch",
+    "watch-files": "copy-and-watch src/**/js/* src/**/js/modules/* src/**/images/* src/**/webfonts/* public/ --watch",
     "zip": "npm-build-zip --source=. --destination=.",
     "reload": "reload -w src/ -d public/ -e html,scss,css,js,ejs -p 3000"
   },
