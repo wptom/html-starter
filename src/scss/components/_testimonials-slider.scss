@@ -1,11 +1,38 @@
 .testimonials-slider {
 	&__item {
+		margin-bottom: 20px;
 
+		&__top {
+			font-size: 4rem;
+		}
+
+		&__text {
+			margin-bottom: 20px;
+		}
+
+		&__user {
+			&__img {
+				margin-bottom: 10px;
+			}
+		}
 	}
 }
 
-.tns-controls {
-	button {
-		background-color: blue;
+.testimonials-slider-controls {
+	display: flex;
+	justify-content: center;
+
+	&__prev,
+	&__next {
+		margin: 0 5px;
+		border: none;
+		background: none;
+		color: $col-button-default;
+		font-size: 1.5rem;
+
+		&:hover {
+			color: $col-button-hover;
+			cursor: pointer;
+		}
 	}
 }
