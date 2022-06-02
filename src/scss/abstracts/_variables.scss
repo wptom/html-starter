@@ -109,8 +109,8 @@ $footer-nav-color-hover: color.adjust($col-brand-primary, $lightness: 30%);
 $footer-nav-font-size: $font-size-body-mini;
 
 // Brands
-$brands-background-color: color.adjust($col-brand-primary, $lightness: 30%);
-$brands-border-color: $col-neutral-1;
+$brands-background-color: $col-neutral-1;
+$brands-border-color: color.adjust($col-neutral-1, $lightness: -10%);
 
 // Icon box
 $icon-box-default-color: $col-white;
